@@ -6,8 +6,8 @@ require 'seed_me_seymour/version'
 Gem::Specification.new do |spec|
   spec.name          = "seed_me_seymour"
   spec.version       = SeedMeSeymour::VERSION
-  spec.authors       = ["Tony"]
-  spec.email         = ["saric.tony@gmail.com\n"]
+  spec.authors       = ["Tony S.", "Brandon G." ]
+  spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
 
   spec.summary       = %q{TODO: This gem will analyze your current database and make a seed file with pre-populated seed information using faker}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
