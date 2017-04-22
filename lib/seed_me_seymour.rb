@@ -109,7 +109,8 @@ module SeedMeSeymour
         file.puts column + ": " + type + ", "   
         }
 #if type is a references
-      elsif line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] == "index"     
+      elsif line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] == "index"      
+        column = line.match(/\s[t.index].*(?<=")(?<=\s\[")(([a-z]+.\id))/)[1]  
         type = line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] 
         type = indx
         File.open(fi_le, 'a') { |file|
