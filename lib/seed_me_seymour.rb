@@ -138,3 +138,8 @@ module SeedMeSeymour
     end
   end
 end
+
+
+# File.open(fi_le, 'a') { |file|
+#   file.puts "User.destroy_all"
+
