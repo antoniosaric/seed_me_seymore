@@ -119,9 +119,9 @@ namespace :seedme do
         file.puts column + ": " + type + ", "   
         }
 #if type is a references
-      elsif line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] == "index"     
+      elsif line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] == "references"     
         type = line.match(/((?<=\s\st.)[a-z]{1,13})/)[0] 
-        type = indx
+        type = references
         File.open(fi_le, 'a') { |file|
         file.puts column + ": " + type + ", "   
         }
