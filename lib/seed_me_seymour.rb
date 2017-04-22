@@ -17,7 +17,8 @@ module SeedMeSeymour
   decimal = "Faker::Number.decimal(2)"
   float = "Faker::Number.decimal(2)"
   integer = "Faker::Number.between(1, 10)"
-  references = "Faker::Number.between(1, 10)"
+#indx referes to references. User references to get index into schema.rb 
+  indx = "Faker::Number.between(1, 10)"
   string = "Faker::StarWars.character"
   text = "Faker::Lorem.sentences(4)"
   time = "Faker::Time.forward(23, :morning)"
