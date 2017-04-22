@@ -1,8 +1,4 @@
 require "seed_me_seymour/version"
-require 'active_support/inflector'
-require 'rails/engine'
-require 'faker'
-
 
 
 module SeedMeSeymour
