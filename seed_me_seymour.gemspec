@@ -1,5 +1,7 @@
 # coding: utf-8
 
+% cat seed_me_seymore.gemspec
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'seed_me_seymour/version'
@@ -9,11 +11,11 @@ Gem::Specification.new do |spec|
   spec.version       = SeedMeSeymour::VERSION
   spec.authors       = ["Tony S.", "Brandon G." ]
   spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
-  spec.files       = ["lib/seed_me_seymour.rb"]
-  spec.summary       = %q{This gem will analyze your current database schema and make a seed file using faker}
-  # spec.homepage      = "Put your gem's website or public repo URL here."
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
+  spec.summary       = %q{TODO: This gem will analyze your current database and make a seed file with pre-populated seed information using faker}
+  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+
+  # Prevent pushing this gem to   RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
@@ -31,5 +33,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "faker"
 end
