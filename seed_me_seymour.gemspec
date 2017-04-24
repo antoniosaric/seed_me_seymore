@@ -10,13 +10,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tony S.", "Brandon G." ]
   spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
   spec.files       = ["lib/seed_me_seymour.rb"]
-  spec.summary       = %q{This gem will analyze your current database and make a seed file with pre-populated seed information using faker}
+  spec.summary       = %q{This gem will analyze your current database schema and make a seed file using faker}
   # spec.homepage      = "Put your gem's website or public repo URL here."
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "Set to 'http://rubygems.com'"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
